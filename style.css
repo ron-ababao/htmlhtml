@@ -1,3 +1,10 @@
 body{
-    background-color:pink;
+    background-color:#5691ea;
+}
+
+ul{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
 }
