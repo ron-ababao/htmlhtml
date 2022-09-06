@@ -2,42 +2,82 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 
 body {
-    background: rgb(60, 89, 255);
+    margin: 0;
+    padding: 0;
+    background: #3c59ff;
     color: #fff;
     font-family: 'Noto Sans', sans-serif;
 }
+.navbar{
+    padding-top: 1rem;
+    width:6rem;
+    height:100vh;
+    position:fixed;
+    background:#1a0256;
+    transition: all 400ms;
+}
+.navbar:hover{
+    width: 13.1rem;
 
-body::-webkit-scrollbar {
-    width: 0.25rem;
-  }
-  
-body::-webkit-scrollbar-track {
-    background: #1e1e24;
-  }
-  
-body::-webkit-scrollbar-thumb {
-    background: #6649b8;
-  }
-  
+}
+
+.picss{
+    transition: all 400ms;
+}
+
+.navbar:hover .picss{
+    transform:rotate(180deg);
+}
+
+.nav-item:hover{
+    transform: translateY(-3px) scale(1.5);
+    transition: all 400ms;
+}
+.nav-item{
+    transition: all 400ms;
+}
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:grid;
+    grid-template-rows: repeat(11,1fr);
+    align-items: center;
+    height: 100%;
+    justify-content:center;
+    text-align: center;
+
+}
 main{
     margin-left:6rem;
+    padding-top: 1rem;
 }
 
 .intro{
-    display:grid;
-    grid-template-columns: 1fr 3fr 1fr;
+display:grid;
+grid-template-columns:1fr 5fr 1fr;
+margin-right: 3rem;
+margin-left: 1.5rem;
+margin-bottom:0;
 }
 
-.title-fields {
+.title-fields{
     display: flex;
     justify-content:center;
-    align-items: center;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 50px;
 }
+img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
 .fieldnames{
+    padding:1rem;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr 3fr 0.1fr;
     transition: all 400ms;
     overflow: hidden;
     background-size: cover;
@@ -51,12 +91,12 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:#353535;
+    background:#210075;
     font-size: minmax(1rem,2rem);
     color: #fff;
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
     height: auto;
-    min-width: 1fr;
+    width: 100%;
     border-radius: 4px;
     transition: all 400ms;
     background-size: cover;
@@ -65,13 +105,40 @@ main{
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-
-.fields:hover {
-    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    padding-bottom: 5px
+    }
+.fields:hover{
+    box-shadow: rgb(255, 255, 255) 0px 0.35em 1.175em, rgb(255, 255, 255) 0px 0.175em 0.5em;
     transform: translateY(-3px) scale(1.1);
 }
 
- 
+.logos{
+    transition: all 400ms;
+}
+
+.logos:hover{
+    transform: translateY(-3px) scale(1.1);
+}
+
+.odd{
+    background-color: #0093d7;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a {
+    font-size: 1.8em;
+}
+
+a :not(.title-fields) :not(.logos):hover{
+    color:aquamarine;
+    transform: translateY(-3px) scale(1.5);
+}
+
+.firsts{
+    justify-content:center;
+    text-align: center; 
+}
