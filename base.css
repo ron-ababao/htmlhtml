@@ -8,6 +8,20 @@ body {
     color: #fff;
     font-family: 'Noto Sans', sans-serif;
 }
+
+body::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #3000b3;
+  }
+  
+
 .navbar{
     padding-top: 1rem;
     width:6rem;
@@ -17,8 +31,7 @@ body {
     transition: all 400ms;
 }
 .navbar:hover{
-    width: 13.1rem;
-
+    width: 12rem;
 }
 
 .picss{
@@ -31,7 +44,7 @@ body {
 
 .nav-item:hover{
     transform: translateY(-3px) scale(1.5);
-    transition: all 400ms;
+    color:rgb(86, 253, 197);
 }
 .nav-item{
     transition: all 400ms;
@@ -59,6 +72,10 @@ grid-template-columns:1fr 5fr 1fr;
 margin-right: 3rem;
 margin-left: 1.5rem;
 margin-bottom:0;
+}
+
+.navlink:hover{
+    color:rgb(86, 253, 197);
 }
 
 .title-fields{
@@ -127,18 +144,10 @@ img {
 a{
     text-decoration: none;
     color:white;
-}
-
-a {
     font-size: 1.8em;
-}
-
-a :not(.title-fields) :not(.logos):hover{
-    color:aquamarine;
-    transform: translateY(-3px) scale(1.5);
 }
 
 .firsts{
     justify-content:center;
     text-align: center; 
-}
+} 
