@@ -2,32 +2,76 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 
 body {
-    background: rgb(19, 19, 19);
+    background: rgb(60, 89, 255);
     color: #fff;
     font-family: 'Noto Sans', sans-serif;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #353535;
-    font-size: 3rem;
-    color: #fff;
-    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-    height: 100%;
-    width: 100%;
-    border-radius: 4px;
-    transition: all 500ms;
-    overflow: hidden;
+body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+  }
+  
+main{
+    margin-left:6rem;
+}
 
+.intro{
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.title-fields {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.fieldnames{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(8,1fr);
+    transition: all 400ms;
+    overflow: hidden;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
- }
-  
-.card:hover {
+    margin: 0.5rem;
+}
+
+.fields{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#353535;
+    font-size: minmax(1rem,2rem);
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: auto;
+    min-width: 1fr;
+    border-radius: 4px;
+    transition: all 400ms;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.fields:hover {
     box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
     transform: translateY(-3px) scale(1.1);
- }
+}
+
+ 
